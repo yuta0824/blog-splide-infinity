@@ -5,10 +5,11 @@ new Splide(".splide", {
   fixedWidth: "200px", // スライドのwidth200px
   gap: "20px", // スライド間の余白20px
 
-  breakpoints: { // 767px以下のスタイル
+  breakpoints: {
+    // 767px以下のスタイル
     767: {
       fixedWidth: "100px", // スライドのwidth100px
       gap: "10px", // スライド間の余白10px
     },
   },
-}).mount();
+}).mount(window.splide.Extensions);
